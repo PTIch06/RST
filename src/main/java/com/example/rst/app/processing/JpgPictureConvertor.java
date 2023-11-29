@@ -28,6 +28,7 @@ public class JpgPictureConvertor implements PictureConverter {
             result = instance.doOCR(picture);
         } catch (TesseractException e){
             log.error("Error when extraction text from picture", e);
+            e.printStackTrace();
         }
         return result;
     }

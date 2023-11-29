@@ -31,6 +31,10 @@ dependencies {
 	testImplementation "org.junit.jupiter:junit-jupiter:5.9.2"
 }
 
+test {
+	systemProperty "java.awt.headless", "false"
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
