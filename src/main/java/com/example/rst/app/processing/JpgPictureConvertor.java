@@ -1,17 +1,19 @@
-package com.example.rst.app.Processing;
+package com.example.rst.app.processing;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 
 // TODO: put in the factory
 @Slf4j
+@Service
 public class JpgPictureConvertor implements PictureConverter {
 
-    private static final String testData = "";
+    private static final String testData = "src\\main\\resources\\tessdata";
     private static final String language = "eng";
 
     @Override

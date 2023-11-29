@@ -1,4 +1,4 @@
-package com.example.rst.app.Processing;
+package com.example.rst.app.processing;
 
 import java.io.File;
 
