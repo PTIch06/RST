@@ -10,10 +10,10 @@ import java.io.File;
 @SpringBootTest
 public class RealTimeScreenDataCollectorTest {
     @Autowired
-    RealTimeScreenDataCollector realTimeScreenDataCollector;
+    PngScreenDataCollector pngScreenDataCollector;
     @Test
     public void saveScreenTest(){
-        realTimeScreenDataCollector.saveScreen();
+        pngScreenDataCollector.saveScreen();
 
         String path = "src/main/resources/ImmageStorage";
         String fileName = "Screen-1.png";

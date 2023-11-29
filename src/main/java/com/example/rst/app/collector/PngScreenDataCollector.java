@@ -1,6 +1,5 @@
 package com.example.rst.app.collector;
 
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +11,7 @@ import java.io.IOException;
 
 @Slf4j
 @Service
-public class RealTimeScreenDataCollector {
+public class PngScreenDataCollector implements ScreenDataCollector {
 
     public void saveScreen(){
         String pathToStorage = "src/main/resources/ImmageStorage";
