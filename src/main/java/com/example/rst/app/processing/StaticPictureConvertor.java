@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 
-// TODO: put in the factory
 @Slf4j
 @Service
-public class JpgPictureConvertor implements PictureConverter {
+public class StaticPictureConvertor implements PictureConverter {
 
     private static final String testData = "src\\main\\resources\\tessdata";
     private static final String language = "eng";
