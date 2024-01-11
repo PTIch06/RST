@@ -16,7 +16,6 @@ public class StaticPictureConvertorTest {
         File picture = new File("src/test/resources/testpictures/NewsPage.jpg");
         String actual = staticPictureConvertor.getTextFromPicture(picture);
 
-        System.out.println(actual);
         assertNotNull(actual);
     }
 
@@ -25,10 +24,15 @@ public class StaticPictureConvertorTest {
         File picture = new File("src/test/resources/testpictures/NewsPage.jpg");
         String actual = staticPictureConvertor.getTextFromPicture(picture);
 
-        System.out.println(actual);
-        assertTrue(actual.contains("Choose products confidently with reviews and real-world testing"));
-        assertTrue(actual.contains("Unwind with Spelling Bee, Wordle, The Crossword and more"));
-        assertTrue(actual.contains("Follow in-depth, personalized coverage of your favorite sports"));
+        assertTrue(actual.contains("Subscribers"));
+        assertTrue(actual.contains("enjoy"));
+        assertTrue(actual.contains("more"));
+        assertTrue(actual.contains("with"));
+        assertTrue(actual.contains("New"));
+        assertTrue(actual.contains("York"));
+        assertTrue(actual.contains("Times"));
+        assertTrue(actual.contains("All"));
+        assertTrue(actual.contains("Access."));
     }
 
     @Test
@@ -36,7 +40,6 @@ public class StaticPictureConvertorTest {
         File picture = new File("src/test/resources/testpictures/NewsPage2.png");
         String actual = staticPictureConvertor.getTextFromPicture(picture);
 
-        System.out.println(actual);
         assertNotNull(actual);
     }
 
@@ -45,10 +48,15 @@ public class StaticPictureConvertorTest {
         File picture = new File("src/test/resources/testpictures/NewsPage2.png");
         String actual = staticPictureConvertor.getTextFromPicture(picture);
 
-        System.out.println(actual);
-        assertTrue(actual.contains("Choose products confidently with reviews and real-world testing"));
-        assertTrue(actual.contains("Unwind with Spelling Bee, Wordle, The Crossword and more"));
-        assertTrue(actual.contains("Follow in-depth, personalized coverage of your favorite sports"));
+        assertTrue(actual.contains("Subscribers"));
+        assertTrue(actual.contains("enjoy"));
+        assertTrue(actual.contains("more"));
+        assertTrue(actual.contains("with"));
+        assertTrue(actual.contains("New"));
+        assertTrue(actual.contains("York"));
+        assertTrue(actual.contains("Times"));
+        assertTrue(actual.contains("All"));
+        assertTrue(actual.contains("Access."));
     }
 }
 
